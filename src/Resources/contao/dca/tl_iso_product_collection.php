@@ -1,7 +1,9 @@
 <?php
 
+use MarcoSimbuerger\IsotopeCustomerNotes\Backend\ProductCollection\CollectionLabelCallback;
+
 $GLOBALS['TL_DCA']['tl_iso_product_collection']['list']['label']['fields'][] = 'customer_notes';
-$GLOBALS['TL_DCA']['tl_iso_product_collection']['list']['label']['label_callback'] = ['IsotopeCustomerNotes\Backend\ProductCollection\CollectionLabelCallback', 'getOrderLabel'];
+$GLOBALS['TL_DCA']['tl_iso_product_collection']['list']['label']['label_callback'] = [CollectionLabelCallback::class, 'getOrderLabel'];
 
 $GLOBALS['TL_DCA']['tl_iso_product_collection']['palettes']['default'] = str_replace
 (

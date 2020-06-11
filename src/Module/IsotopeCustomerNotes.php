@@ -1,6 +1,6 @@
 <?php
 
-namespace IsotopeCustomerNotes\Module;
+namespace MarcoSimbuerger\IsotopeCustomerNotes\Module;
 
 use Contao\FrontendTemplate;
 use Isotope\Isotope;
@@ -12,7 +12,7 @@ use Isotope\Module\Checkout;
 /**
  * Class IsotopeCustomerNotes.
  *
- * @package IsotopeCustomerNotes
+ * @package MarcoSimbuerger\IsotopeCustomerNotes
  */
 class IsotopeCustomerNotes extends CheckoutStep implements IsotopeCheckoutStep {
 
@@ -28,26 +28,23 @@ class IsotopeCustomerNotes extends CheckoutStep implements IsotopeCheckoutStep {
      *
      * @param Checkout $objModule
      */
-    public function __construct(Checkout $objModule)
-    {
+    public function __construct(Checkout $objModule) {
         parent::__construct($objModule);
 
         $this->Template = new FrontendTemplate('iso_checkout_customer_notes');
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritdoc}.
      */
-    public function isAvailable()
-    {
+    public function isAvailable() {
         return TRUE;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritdoc}.
      */
-    public function isSkippable()
-    {
+    public function isSkippable() {
         return FALSE;
     }
 
@@ -57,8 +54,7 @@ class IsotopeCustomerNotes extends CheckoutStep implements IsotopeCheckoutStep {
      * @return string
      *   The parsed template.
      */
-    public function generate()
-    {
+    public function generate() {
 
         $strClass  = $GLOBALS['TL_FFL']['textarea'];
 
@@ -85,6 +81,7 @@ class IsotopeCustomerNotes extends CheckoutStep implements IsotopeCheckoutStep {
         $this->Template->headline = $GLOBALS['TL_LANG']['MSC']['customer_notes'];
         $this->Template->message = $GLOBALS['TL_LANG']['MSC']['customer_notes_message'];
         $this->Template->form = $objWidget->parse();
+
         return $this->Template->parse();
     }
 
@@ -93,8 +90,7 @@ class IsotopeCustomerNotes extends CheckoutStep implements IsotopeCheckoutStep {
      *
      * @return array
      */
-    public function review()
-    {
+    public function review() {
         return [
             'customer_notes' => [
                 'headline' => $GLOBALS['TL_LANG']['MSC']['customer_notes'],
@@ -106,18 +102,16 @@ class IsotopeCustomerNotes extends CheckoutStep implements IsotopeCheckoutStep {
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritdoc}.
      */
-    public function getNotificationTokens(IsotopeProductCollection $objCollection)
-    {
+    public function getNotificationTokens(IsotopeProductCollection $objCollection) {
         return[];
     }
 
     /**
      * Add customer notes to the order.
      */
-    private function addNoteToOrder()
-    {
+    private function addNoteToOrder() {
         $customerNotes = Isotope::getCart()->customer_notes;
         $draftOrder = Isotope::getCart()->getDraftOrder();
         if ($customerNotes && $draftOrder) {

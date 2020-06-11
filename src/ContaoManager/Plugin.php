@@ -1,25 +1,24 @@
 <?php
 
-namespace IsotopeCustomerNotes\ContaoManager;
+namespace MarcoSimbuerger\IsotopeCustomerNotes\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use IsotopeCustomerNotes\IsotopeCustomerNotes;
+use MarcoSimbuerger\IsotopeCustomerNotes\IsotopeCustomerNotes;
 
 /**
  * Class Plugin.
  *
- * @package IsotopeCustomerNotes\ContaoManager
+ * @package MarcoSimbuerger\IsotopeCustomerNotes\ContaoManager
  */
-class Plugin implements BundlePluginInterface
-{
+class Plugin implements BundlePluginInterface {
+
     /**
-     * {@inheritdoc}
+     * {@inheritdoc}.
      */
-    public function getBundles(ParserInterface $parser)
-    {
+    public function getBundles(ParserInterface $parser) {
         return [
             BundleConfig::create(IsotopeCustomerNotes::class)
                 ->setLoadAfter([
@@ -28,4 +27,5 @@ class Plugin implements BundlePluginInterface
                 ]),
         ];
     }
+
 }

@@ -1,14 +1,14 @@
 <?php
 
-namespace IsotopeCustomerNotes;
+namespace MarcoSimbuerger\IsotopeCustomerNotes;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * Class IsotopeCustomerNotes.
  *
- * @package IsotopeCustomerNotes
+ * @package MarcoSimbuerger\IsotopeCustomerNotes
  */
-class IsotopeCustomerNotes extends Bundle
-{
+class IsotopeCustomerNotes extends Bundle {
+
 }

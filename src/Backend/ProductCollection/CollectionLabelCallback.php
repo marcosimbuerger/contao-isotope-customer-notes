@@ -1,6 +1,6 @@
 <?php
 
-namespace IsotopeCustomerNotes\Backend\ProductCollection;
+namespace MarcoSimbuerger\IsotopeCustomerNotes\Backend\ProductCollection;
 
 use Isotope\Backend\ProductCollection\Callback;
 use Isotope\Model\ProductCollection\Order;
@@ -10,7 +10,7 @@ use Isotope\Model\ProductCollection\Order;
  *
  * Extends the label callback functionality of the product collection overview (orders).
  *
- * @package IsotopeCustomerNotes\Backend\ProductCollection
+ * @package MarcoSimbuerger\IsotopeCustomerNotes\Backend\ProductCollection
  */
 class CollectionLabelCallback extends Callback {
 
