@@ -17,7 +17,7 @@ class CollectionLabelCallback extends Callback {
     /**
      * {@inheritdoc}.
      */
-    public function getOrderLabel($row, $label, \DataContainer $dc, $args) {
+    public function getOrderLabel($row, $label, \DataContainer $dc, $args): array {
         $args = parent::getOrderLabel($row, $label, $dc, $args);
         // Remove the last entry (the note text).
         array_pop($args);

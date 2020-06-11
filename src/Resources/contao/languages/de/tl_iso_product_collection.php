@@ -1,3 +1,3 @@
 <?php
 
-$GLOBALS['TL_LANG']['tl_iso_product_collection']['customer_notes'] = array("Kunden-Bemerkungen", "");
+$GLOBALS['TL_LANG']['tl_iso_product_collection']['customer_notes'] = ['Kunden-Bemerkungen', ''];
