@@ -17,6 +17,6 @@ $GLOBALS['TL_DCA']['tl_iso_product_collection']['fields']['customer_notes'] = [
     'label'       => &$GLOBALS['TL_LANG']['tl_iso_product_collection']['customer_notes'],
     'exclude'     => TRUE,
     'inputType'   => 'textarea',
-    'eval'        => ['style'=>'height:80px;'],
+    'eval'        => ['style'=>'height:80px;', 'tl_class'=>'clr'],
     'sql'         => "text NULL",
 ];
