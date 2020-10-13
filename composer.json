@@ -2,6 +2,7 @@
     "name": "marcosimbuerger/contao-isotope-customer-notes",
     "description": "Customer notes for Contao Isotope eCommerce checkout.",
     "keywords": ["contao", "isotope", "ecommerce", "customer", "notes", "checkout"],
+    "homepage": "https://github.com/marcosimbuerger/contao-isotope-customer-notes",
     "type": "contao-bundle",
     "license": "LGPL-3.0-or-later",
     "authors": [
@@ -20,11 +21,11 @@
         "contao/manager-plugin": "<2.0 || >=3.0"
     },
     "extra": {
-        "contao-manager-plugin": "MarcoSimbuerger\\IsotopeCustomerNotes\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "MarcoSimbuerger\\IsotopeCustomerNotesBundle\\ContaoManager\\Plugin"
     },
     "autoload": {
         "psr-4": {
-            "MarcoSimbuerger\\IsotopeCustomerNotes\\": "src/"
+            "MarcoSimbuerger\\IsotopeCustomerNotesBundle\\": "src/"
         }
     }
 }

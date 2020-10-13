@@ -1,17 +1,17 @@
 <?php
 
-namespace MarcoSimbuerger\IsotopeCustomerNotes\ContaoManager;
+namespace MarcoSimbuerger\IsotopeCustomerNotesBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use MarcoSimbuerger\IsotopeCustomerNotes\IsotopeCustomerNotes;
+use MarcoSimbuerger\IsotopeCustomerNotesBundle\IsotopeCustomerNotes;
 
 /**
  * Class Plugin.
  *
- * @package MarcoSimbuerger\IsotopeCustomerNotes\ContaoManager
+ * @package MarcoSimbuerger\IsotopeCustomerNotesBundle\ContaoManager
  */
 class Plugin implements BundlePluginInterface {
 

@@ -1,6 +1,6 @@
 <?php
 
-use MarcoSimbuerger\IsotopeCustomerNotes\Module\IsotopeCustomerNotes;
+use MarcoSimbuerger\IsotopeCustomerNotesBundle\Backend\CheckoutStep\IsotopeCustomerNotes;
 
 // Add customer notes before the last step (review).
 $checkoutStepCount = count($GLOBALS['ISO_CHECKOUTSTEP']);

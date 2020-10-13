@@ -1,6 +1,6 @@
 <?php
 
-namespace MarcoSimbuerger\IsotopeCustomerNotes\Module;
+namespace MarcoSimbuerger\IsotopeCustomerNotesBundle\Backend\CheckoutStep;
 
 use Contao\FrontendTemplate;
 use Contao\Input;
@@ -13,7 +13,7 @@ use Isotope\Module\Checkout;
 /**
  * Class IsotopeCustomerNotes.
  *
- * @package MarcoSimbuerger\IsotopeCustomerNotes
+ * @package MarcoSimbuerger\IsotopeCustomerNotesBundle\Backend\CheckoutStep
  */
 class IsotopeCustomerNotes extends CheckoutStep implements IsotopeCheckoutStep {
 
