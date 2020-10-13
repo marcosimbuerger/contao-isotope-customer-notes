@@ -6,7 +6,7 @@ use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use MarcoSimbuerger\IsotopeCustomerNotesBundle\IsotopeCustomerNotes;
+use MarcoSimbuerger\IsotopeCustomerNotesBundle\IsotopeCustomerNotesBundle;
 
 /**
  * Class Plugin.
@@ -20,7 +20,7 @@ class Plugin implements BundlePluginInterface {
      */
     public function getBundles(ParserInterface $parser) {
         return [
-            BundleConfig::create(IsotopeCustomerNotes::class)
+            BundleConfig::create(IsotopeCustomerNotesBundle::class)
                 ->setLoadAfter([
                     ContaoCoreBundle::class,
                     'isotope',
